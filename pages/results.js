@@ -12,13 +12,11 @@ export default function Results({ breweries }) {
           ? breweries.map((brewery, index) => {
               return (
                 <div key={index} data-id={index} className="brewery">
-                  <a key={brewery.slug} href={`results/${brewery.slug}`}>
-                    <h2>{brewery.name}</h2>
-                    <p>Type: {brewery.brewery_type}</p>
-                    <p>
-                      {brewery.city}, {brewery.state}, {brewery.country}.
-                    </p>
-                  </a>
+                  <h2>{brewery.name}</h2>
+                  <p>Type: {brewery.brewery_type}</p>
+                  <p>
+                    {brewery.city}, {brewery.state}, {brewery.country}.
+                  </p>
                 </div>
               );
             })
