@@ -1,4 +1,4 @@
-import Layout from "../../component/Layout/Layout";
+import Layout from "../../components/Layout/Layout";
 import { BASE_URL } from "../../constants/api";
 import axios from "axios";
 
